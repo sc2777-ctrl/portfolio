@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soham Chandra | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f8fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #1d3557;
+            padding: 18px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #eaf0f6;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #1d3557;
+        }
+
+        header h2 {
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        header p {
+            max-width: 750px;
+            font-size: 19px;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #1d3557;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 12px 22px;
+            border-radius: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-weight: bold;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .project h3 {
+            color: #1d3557;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            margin-bottom: 20px;
+        }
+
+        .project a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #1d3557;
+            color: white;
+            padding: 9px 16px;
+            border-radius: 5px;
+        }
+
+        .project a:hover {
+            background-color: #457b9d;
+        }
+
+        footer {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav div {
+                margin-top: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>SC</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </nav>
+
+    <header id="about">
+        <h1>Soham Chandra</h1>
+
+        <h2>Supply Chain Management Student | Rutgers University</h2>
+
+        <p>
+            Supply Chain Management student at Rutgers University with an
+            interest in data analysis, business operations, and using
+            technology to solve real-world business problems.
+        </p>
+    </header>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">Supply Chain Management</div>
+            <div class="skill">Microsoft Excel</div>
+            <div class="skill">Data Analysis</div>
+            <div class="skill">Business Operations</div>
+            <div class="skill">Database Design</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Problem Solving</div>
+            <div class="skill">Team Collaboration</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>Parking Lot Database Design</h3>
+
+                <p>
+                    Designed a relational database for a gated parking system,
+                    identifying important entities, relationships, keys, and
+                    business requirements through an ER diagram and database
+                    design.
+                </p>
+
+                <a href="https://github.com/YOUR-GITHUB-USERNAME"
+                   target="_blank">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Business Operations Optimization</h3>
+
+                <p>
+                    Applied break-even analysis and linear programming
+                    techniques to business scenarios involving costs, revenue,
+                    resource constraints, and operational decision-making.
+                </p>
+
+                <a href="https://github.com/YOUR-GITHUB-USERNAME"
+                   target="_blank">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Demand Planning Analysis</h3>
+
+                <p>
+                    Analyzed demand patterns and forecasting concepts to
+                    understand how changes in customer demand affect inventory
+                    and supply chain planning.
+                </p>
+
+                <a href="https://github.com/YOUR-GITHUB-USERNAME"
+                   target="_blank">
+                    View Project
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Soham Chandra | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
